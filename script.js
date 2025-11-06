@@ -73,7 +73,54 @@ document.addEventListener('DOMContentLoaded', () => {
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
     const hero = document.querySelector('.hero');
-    if (hero && scrolled < hero.offsetHeight && window.location.pathname === '/' || window.location.pathname.endsWith('index.html')) {
+    if (hero && scrolled < hero.offsetHeight && (window.location.pathname === '/' || window.location.pathname.endsWith('index.html'))) {
         hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+        
+        // Add fade effect to hero content on scroll
+        const heroContent = document.querySelector('.hero-content');
+        if (heroContent) {
+            const opacity = Math.max(0, 1 - scrolled / 400);
+            heroContent.style.opacity = opacity;
+        }
     }
+});
+
+// Add subtle mouse tracking effect to cards (3D tilt)
+document.querySelectorAll('.cta-card, .commitment-card').forEach(card => {
+    let isHovering = false;
+    
+    card.addEventListener('mouseenter', () => {
+        isHovering = true;
+    });
+    
+    card.addEventListener('mousemove', (e) => {
+        if (!isHovering) return;
+        
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        
+        const rotateX = (y - centerY) / 25;
+        const rotateY = (centerX - x) / 25;
+        
+        card.style.setProperty('--rotate-x', `${rotateX}deg`);
+        card.style.setProperty('--rotate-y', `${rotateY}deg`);
+    });
+    
+    card.addEventListener('mouseleave', () => {
+        isHovering = false;
+        card.style.setProperty('--rotate-x', '0deg');
+        card.style.setProperty('--rotate-y', '0deg');
+    });
+});
+
+// Add staggered animation to CTA cards
+document.addEventListener('DOMContentLoaded', () => {
+    const ctaCards = document.querySelectorAll('.cta-card');
+    ctaCards.forEach((card, index) => {
+        card.style.animationDelay = `${index * 0.1}s`;
+    });
 });
