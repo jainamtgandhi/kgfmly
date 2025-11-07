@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,500&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -34,50 +35,213 @@
         </div>
     </nav>
 
+    <!-- Inline SVG Icons -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+        <symbol id="icon-horizon" viewBox="0 0 120 120">
+            <path d="M20 80 Q60 40 100 80" stroke="currentColor" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.5"/>
+            <circle cx="60" cy="55" r="18" fill="currentColor" opacity="0.4"/>
+            <path d="M20 90 L100 90" stroke="currentColor" stroke-width="4" opacity="0.3"/>
+        </symbol>
+        <symbol id="icon-compass-star" viewBox="0 0 120 120">
+            <circle cx="60" cy="60" r="42" fill="none" stroke="currentColor" stroke-width="5" opacity="0.45"/>
+            <path d="M60 20 L70 50 L100 60 L70 70 L60 100 L50 70 L20 60 L50 50 Z" fill="currentColor" opacity="0.4"/>
+        </symbol>
+        <symbol id="icon-home-heart" viewBox="0 0 120 120">
+            <path d="M25 55 L60 25 L95 55 L95 92 C95 95 92 98 89 98 L31 98 C28 98 25 95 25 92 Z" fill="none" stroke="currentColor" stroke-width="5" opacity="0.5"/>
+            <path d="M60 45 C50 45 45 55 50 62 C55 70 60 75 60 75 C60 75 65 70 70 62 C75 55 70 45 60 45 Z" fill="currentColor" opacity="0.4"/>
+        </symbol>
+        <symbol id="icon-calendar" viewBox="0 0 120 120">
+            <rect x="25" y="35" width="70" height="55" rx="8" fill="none" stroke="currentColor" stroke-width="5" opacity="0.5"/>
+            <path d="M25 50 L95 50" stroke="currentColor" stroke-width="5" opacity="0.4"/>
+            <circle cx="45" cy="65" r="8" fill="currentColor" opacity="0.5"/>
+            <circle cx="75" cy="80" r="8" fill="currentColor" opacity="0.35"/>
+        </symbol>
+        <symbol id="icon-bridge" viewBox="0 0 120 120">
+            <path d="M25 80 L95 80" stroke="currentColor" stroke-width="6" opacity="0.4"/>
+            <path d="M40 80 C40 50 80 50 80 80" stroke="currentColor" stroke-width="6" fill="none" opacity="0.4"/>
+            <circle cx="40" cy="80" r="6" fill="currentColor" opacity="0.6"/>
+            <circle cx="80" cy="80" r="6" fill="currentColor" opacity="0.6"/>
+        </symbol>
+        <symbol id="icon-lantern-path" viewBox="0 0 120 120">
+            <path d="M30 90 C40 70 55 60 60 40 C65 20 80 20 90 30" fill="none" stroke="currentColor" stroke-width="6" opacity="0.4"/>
+            <circle cx="90" cy="30" r="10" fill="currentColor" opacity="0.6"/>
+        </symbol>
+        <symbol id="icon-infinity" viewBox="0 0 120 120">
+            <path d="M30 60 C30 30 70 30 70 60 C70 90 30 90 30 60 Z" fill="none" stroke="currentColor" stroke-width="6" opacity="0.4"/>
+            <path d="M50 60 C50 30 90 30 90 60 C90 90 50 90 50 60 Z" fill="none" stroke="currentColor" stroke-width="6" opacity="0.4"/>
+        </symbol>
+    </svg>
+
     <!-- Page Header -->
-    <section class="page-hero">
+    <section class="page-hero vision-hero">
+        <div class="vision-hero-shape vision-hero-shape-1"></div>
+        <div class="vision-hero-shape vision-hero-shape-2"></div>
+        <div class="vision-hero-shape vision-hero-shape-3"></div>
         <div class="container">
-            <h1 class="page-title">Vision Forward</h1>
-            <p class="page-subtitle">The Future I Want to Build</p>
+            <div class="vision-hero-content">
+                <div class="vision-hero-text">
+                    <span class="hero-pill">Future in motion</span>
+                    <h1 class="page-title">Vision Forward</h1>
+                    <p class="page-subtitle">This is the life I’m building—steady, thoughtful, and anchored in the values your daughter carries. Every plan here is fueled by consistent action, not grand promises.</p>
+                    <div class="vision-highlights">
+                        <div class="vision-highlight">
+                            <span class="highlight-label">Foundation</span>
+                            <strong>Trust rebuilt daily</strong>
+                        </div>
+                        <div class="vision-highlight">
+                            <span class="highlight-label">Focus</span>
+                            <strong>Family-first choices</strong>
+                        </div>
+                        <div class="vision-highlight">
+                            <span class="highlight-label">Horizon</span>
+                            <strong>Shared legacy</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="vision-hero-illustration">
+                    <div class="vision-orbit vision-orbit-1"></div>
+                    <div class="vision-orbit vision-orbit-2"></div>
+                    <div class="vision-orbit vision-orbit-3"></div>
+                    <div class="vision-core-card">
+                        <svg class="vision-core-icon"><use href="#icon-horizon"></use></svg>
+                        <p>“A future worth building is one you live like it’s already here.”</p>
+                        <span>That’s how I show up today.</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Content -->
-    <section class="section">
+    <section class="section vision-intro section-alt">
         <div class="container">
-            <div class="vision-content">
-                <div class="vision-intention">
-                    <p class="intention-text">I want to build a future with Preksha that is grounded in respect, growth, and genuine love—a life where we support each other's dreams, honor our families, and create a home built on trust and understanding.</p>
+            <div class="vision-intro-grid">
+                <div class="vision-intro-text">
+                    <span class="eyebrow">Why this future matters</span>
+                    <h2 class="section-title">A home built on steady love and shared values</h2>
+                    <p class="section-intro">My vision isn’t abstract—it’s a daily practice. Each step is designed to make sure she feels safe, proud, and supported, and that your trust in me is rebuilt through actions you can see.</p>
                 </div>
+                <div class="vision-intro-card">
+                    <svg class="intro-icon"><use href="#icon-compass-star"></use></svg>
+                    <p>“If we want a future worth remembering, we have to live it with intention today.”</p>
+                    <span>This guides how I plan, save, and show up.</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="vision-timeline">
-                    <div class="vision-item">
-                        <div class="vision-year">2025</div>
-                        <div class="vision-details">
-                            <h3>Rebuilding Trust</h3>
-                            <p>If given the opportunity, I will focus on consistently demonstrating through actions—not just words—that I am committed to being the person Preksha deserves and the person your family can trust. This means showing up, listening, and being present in ways that reflect genuine growth.</p>
+    <section class="section vision-pillars">
+        <div class="container">
+            <div class="pillars-header">
+                <span class="eyebrow">Pillars of our future</span>
+                <h2 class="section-title">What we protect as we move forward</h2>
+                <p class="section-intro">These aren’t promises written in hopes—they’re commitments already in motion, making sure we build a life that honors her, honors you, and honors the family we’ll someday raise.</p>
+            </div>
+            <div class="vision-pillars-grid">
+                <article class="vision-pillar">
+                    <svg class="pillar-icon"><use href="#icon-home-heart"></use></svg>
+                    <h3>Secure, peaceful home</h3>
+                    <p>Emotional safety comes first. We invest in calm routines, respectful conversations, and a space where everyone can breathe easy.</p>
+                    <ul>
+                        <li>Weekly family check-ins to align schedules and support.</li>
+                        <li>No unresolved disagreements—we close them with care.</li>
+                    </ul>
+                </article>
+                <article class="vision-pillar">
+                    <svg class="pillar-icon"><use href="#icon-calendar"></use></svg>
+                    <h3>Intentional planning</h3>
+                    <p>Our finances, careers, and milestones are mapped out together. Stability lets us dream bigger without fear.</p>
+                    <ul>
+                        <li>Shared budgeting with transparent updates each month.</li>
+                        <li>Quarterly planning devoted to family goals and traditions.</li>
+                    </ul>
+                </article>
+                <article class="vision-pillar">
+                    <svg class="pillar-icon"><use href="#icon-bridge"></use></svg>
+                    <h3>Families united</h3>
+                    <p>We bridge both families’ values. Every major choice honors the legacy you built in her.</p>
+                    <ul>
+                        <li>Rotating family gatherings hosted with intention.</li>
+                        <li>Celebrating both family traditions equally.</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section vision-roadmap section-alt">
+        <div class="container">
+            <div class="roadmap-header">
+                <span class="eyebrow">How we get there</span>
+                <h2 class="section-title">A roadmap with milestones we can measure</h2>
+            </div>
+            <div class="roadmap-grid">
+                <div class="roadmap-card">
+                    <div class="roadmap-year">2025</div>
+                    <h3>Rebuilding trust</h3>
+                    <p>Proving change through presence: consistent conversations with you, continued growth work, and calm, respectful partnership you can witness.</p>
+                    <div class="roadmap-footnote">Action: monthly updates, therapy milestones, shared plans.</div>
+                </div>
+                <div class="roadmap-card">
+                    <div class="roadmap-year">2026</div>
+                    <h3>Building our foundation</h3>
+                    <p>Strengthening financial stability, setting up our home, and establishing routines that make everyday life peaceful and prepared.</p>
+                    <div class="roadmap-footnote">Action: joint savings targets, home planning, shared calendar.</div>
+                </div>
+                <div class="roadmap-card">
+                    <div class="roadmap-year">2027 & beyond</div>
+                    <h3>Legacy in motion</h3>
+                    <p>Expanding our family with intention—mentoring, giving back, and making sure our children inherit the values you taught her.</p>
+                    <div class="roadmap-footnote">Action: mentorship commitments, family traditions, community service.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section vision-commitments">
+        <div class="container">
+            <div class="commitments-layout">
+                <div class="commitments-text">
+                    <span class="eyebrow">Daily commitments</span>
+                    <h2 class="section-title">The habits that keep the vision real</h2>
+                    <p class="section-intro">Vision fails without rhythm. These are the practices I’ve built to keep our future aligned with what matters.</p>
+                </div>
+                <div class="commitments-cards">
+                    <div class="commitment-item">
+                        <svg><use href="#icon-lantern-path"></use></svg>
+                        <div>
+                            <strong>Morning alignment</strong>
+                            <p>Shared gratitude and prayer before the day begins—anchoring our mindset in calm intent.</p>
                         </div>
                     </div>
-
-                    <div class="vision-item">
-                        <div class="vision-year">2026</div>
-                        <div class="vision-details">
-                            <h3>Building Together</h3>
-                            <p>I envision us building a life together that honors both our families' values. This includes financial stability, emotional security, and creating traditions that reflect the best of what we've learned from our families. I want to build a home where respect, communication, and mutual support are the foundation.</p>
+                    <div class="commitment-item">
+                        <svg><use href="#icon-bridge"></use></svg>
+                        <div>
+                            <strong>Family pulse</strong>
+                            <p>Bi-weekly calls with parents to stay connected, ask guidance, and include you in our decisions.</p>
                         </div>
                     </div>
-
-                    <div class="vision-item">
-                        <div class="vision-year">2027 & Beyond</div>
-                        <div class="vision-details">
-                            <h3>A Lifetime of Commitment</h3>
-                            <p>My vision is a partnership that deepens over time—one where we continue to grow individually and together, where we support each other's aspirations, and where we create a family that values respect, understanding, and genuine connection. I want to be someone who not only earns your trust once, but maintains it every day.</p>
+                    <div class="commitment-item">
+                        <svg><use href="#icon-infinity"></use></svg>
+                        <div>
+                            <strong>Continuous mentoring</strong>
+                            <p>Keeping mentors and counselors involved so growth stays structured, not reactive.</p>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="closing-note">
-                    <p>If someday you choose to see me again—I'll be grateful for the chance to earn your trust.</p>
+    <section class="section vision-closing">
+        <div class="container">
+            <div class="vision-closing-card">
+                <div class="closing-header">
+                    <span class="eyebrow">Looking ahead with gratitude</span>
+                    <h2>I know trust isn’t guaranteed. But I’ll live like it can be earned.</h2>
+                </div>
+                <p class="closing-text">Thank you for hearing me out. The future I see is one where your daughter is cherished, where both families are honored, and where my actions reflect the respect I have for you. I’m ready to prove this, one day at a time.</p>
+                <div class="closing-footer">
+                    <a class="btn-secondary subtle" href="/memories">Visit our memories »</a>
                 </div>
             </div>
         </div>

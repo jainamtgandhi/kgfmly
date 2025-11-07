@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,500&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -34,67 +35,198 @@
         </div>
     </nav>
 
+    <!-- Inline SVG Icons -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+        <symbol id="icon-map-pin" viewBox="0 0 120 120">
+            <path d="M60 10 C35 10 15 30 15 55 C15 85 60 110 60 110 C60 110 105 85 105 55 C105 30 85 10 60 10 Z" fill="none" stroke="currentColor" stroke-width="5" opacity="0.5"/>
+            <circle cx="60" cy="55" r="18" fill="currentColor" opacity="0.4"/>
+        </symbol>
+        <symbol id="icon-branch" viewBox="0 0 120 120">
+            <path d="M25 85 Q55 70 80 40" stroke="currentColor" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.6"/>
+            <circle cx="35" cy="80" r="10" fill="currentColor" opacity="0.4"/>
+            <circle cx="65" cy="55" r="10" fill="currentColor" opacity="0.25"/>
+            <circle cx="80" cy="40" r="12" fill="currentColor" opacity="0.2"/>
+        </symbol>
+        <symbol id="icon-moonrise" viewBox="0 0 120 120">
+            <path d="M60 20 A40 40 0 1 0 100 60" fill="none" stroke="currentColor" stroke-width="5" opacity="0.45"/>
+            <circle cx="82" cy="42" r="16" fill="currentColor" opacity="0.4"/>
+            <path d="M30 80 C40 65 60 55 90 60" stroke="currentColor" stroke-width="5" fill="none" opacity="0.35"/>
+        </symbol>
+        <symbol id="icon-compass-path" viewBox="0 0 120 120">
+            <circle cx="60" cy="60" r="45" stroke="currentColor" stroke-width="4" fill="none" opacity="0.5"/>
+            <polygon points="60,25 75,65 60,55 45,65" fill="currentColor" opacity="0.6"/>
+        </symbol>
+        <symbol id="icon-flame" viewBox="0 0 120 120">
+            <path d="M60 20 C50 35 40 40 40 60 C40 80 55 95 60 100 C65 95 80 80 80 60 C80 40 70 35 60 20 Z" fill="currentColor" opacity="0.4"/>
+            <path d="M60 40 C55 48 50 50 50 60 C50 70 58 78 60 80 C62 78 70 70 70 60 C70 50 65 48 60 40 Z" fill="currentColor" opacity="0.7"/>
+        </symbol>
+    </svg>
+
     <!-- Page Header -->
-    <section class="page-hero">
+    <section class="page-hero journey-hero">
+        <div class="journey-hero-shape journey-hero-shape-1"></div>
+        <div class="journey-hero-shape journey-hero-shape-2"></div>
+        <div class="journey-hero-shape journey-hero-shape-3"></div>
         <div class="container">
-            <h1 class="page-title">Our Journey</h1>
-            <p class="page-subtitle">How We Grew Together</p>
+            <div class="journey-hero-content">
+                <div class="journey-hero-text">
+                    <span class="hero-pill">Seven years, one direction</span>
+                    <h1 class="page-title">Our Journey</h1>
+                    <p class="page-subtitle">From meeting to meaning. Every chapter—even the hard ones—shaped how I show up for her today.</p>
+                    <div class="journey-highlights">
+                        <div class="highlight-card">
+                            <span class="highlight-label">First hello</span>
+                            <strong>Aug 5, 2021</strong>
+                            <small>A spark we didn’t plan for.</small>
+                        </div>
+                        <div class="highlight-card">
+                            <span class="highlight-label">Turning point</span>
+                            <strong>Oct 25, 2024</strong>
+                            <small>A lesson we didn’t forget.</small>
+                        </div>
+                        <div class="highlight-card">
+                            <span class="highlight-label">Today</span>
+                            <strong>Rebuilding</strong>
+                            <small>Action over apology.</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="journey-hero-illustration">
+                    <div class="journey-orbit journey-orbit-1"></div>
+                    <div class="journey-orbit journey-orbit-2"></div>
+                    <div class="journey-orbit journey-orbit-3"></div>
+                    <div class="journey-milestone-card">
+                        <svg class="milestone-icon"><use href="#icon-map-pin"></use></svg>
+                        <p>“Progress is the love we practice when it’s hardest.”</p>
+                        <span>Measured in effort, not timelines.</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Content -->
-    <section class="section">
+    <section class="section journey-intro">
         <div class="container">
-            <div class="intro-text">
-                <p>The relationship between Jainam and Preksha had been steady and built on real affection. Both families knew about it, and her parents had slowly begun to see the bond as something serious and possibly long-term.</p>
-            </div>
-
-            <div class="growth-cards">
-                <div class="growth-card">
-                    <div class="growth-date">August 5, 2021</div>
-                    <h3>First Meeting</h3>
-                    <p>We met for the first time. A connection began that neither of us expected would grow into something so meaningful.</p>
+            <div class="journey-intro-layout">
+                <div class="journey-intro-text">
+                    <span class="eyebrow">A story of building, learning, rebuilding</span>
+                    <h2 class="section-title">Where it began and what we’re protecting</h2>
+                    <p class="section-intro">Our journey wasn’t rushed—it was years of slow trust, shared laughter, and families gently opening their doors. Every chapter reminded me that love is less about moments and more about the choices we make between them.</p>
+                    <div class="journey-points">
+                        <div class="journey-point">
+                            <svg><use href="#icon-branch"></use></svg>
+                            <div>
+                                <strong>Grew together, transparently</strong>
+                                <p>Her parents saw what we built. That kind of trust is rare—and worth earning back.</p>
+                            </div>
+                        </div>
+                        <div class="journey-point">
+                            <svg><use href="#icon-compass-path"></use></svg>
+                            <div>
+                                <strong>One moment can reframe everything</strong>
+                                <p>October 25 wasn’t just a disagreement—it was a shock to people who loved her. I understand that.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="growth-card">
-                    <div class="growth-date">March 7, 2023</div>
-                    <h3>Beginning Our Journey</h3>
-                    <p>We started dating. What began as a connection deepened into a relationship built on mutual respect, understanding, and genuine care for each other.</p>
-                </div>
-
-                <div class="growth-card">
-                    <div class="growth-date">Early 2024</div>
-                    <h3>Making It Official</h3>
-                    <p>Both families knew about our relationship. Her parents had slowly begun to see our bond as something serious and possibly long-term. We chose to make it official with our parents.</p>
-                </div>
-
-                <div class="growth-card">
-                    <div class="growth-date">October 25, 2024</div>
-                    <h3>A Moment That Changed Everything</h3>
-                    <p>During one visit, a small disagreement escalated unexpectedly in front of her parents. Voices were raised, emotions ran high, and messages written in frustration were seen. From their perspective, what they witnessed broke the image they had of a calm, stable relationship. I understand their concern and the decision that followed.</p>
-                </div>
-
-                <div class="growth-card">
-                    <div class="growth-date">July 22, 2025</div>
-                    <h3>The Decision</h3>
-                    <p>After multiple back and forth, they called off the wedding and asked us to part ways. I respect their decision. What hurt most wasn't losing a conversation—it was losing their faith in the kind of person I actually am. But I understand that trust, once broken, must be rebuilt through consistent action, not words.</p>
-                </div>
-
-                <div class="growth-card">
-                    <div class="growth-date">Months Following</div>
-                    <h3>Reflection & Growth</h3>
-                    <p>Over the months that followed, I reflected deeply on my reactions, my tone, and the weight of that moment. I saw how one instance of emotion can undo months of peace, and how perception often matters more than intent. I've learned that growth isn't about perfection—it's about recognizing mistakes, committing to change, and demonstrating that commitment consistently over time.</p>
-                </div>
-
-                <div class="growth-card">
-                    <div class="growth-date">Today</div>
-                    <h3>Where I Stand</h3>
-                    <p>Today, I stand before you not as someone who claims to be perfect, but as someone who has learned from his mistakes. I've learned to pause before reacting, to communicate with respect even in difficult moments, and to prioritize understanding over being understood. The incident on October 25th didn't define who I am—but it revealed what I needed to learn, and I have spent these months learning it.</p>
+                <div class="journey-intro-card">
+                    <svg class="journey-intro-icon"><use href="#icon-moonrise"></use></svg>
+                    <p>“Trust isn’t rebuilt by insisting we’re right—it’s rebuilt by choosing to be gentle.”</p>
+                    <span>That’s what I’ve been practicing.</span>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="reflective-quote">
-                <p>"What they couldn't see was the remorse that followed, or the growth that came after. The purpose of rebuilding now isn't to revisit blame, but to show that the incident didn't define who I am—it revealed what I still had to learn, and I have been learning it every day since."</p>
+    <section class="section journey-timeline section-alt">
+        <div class="container">
+            <div class="timeline-header">
+                <span class="eyebrow">What shaped us</span>
+                <h2 class="section-title">Seven chapters that taught me how to show up</h2>
+                <p class="section-intro">Every milestone is a reminder of what matters—especially the one that hurt. I carry each with me as motivation to be better for her and for you.</p>
+            </div>
+            <div class="timeline-wrapper">
+                <div class="timeline-line"></div>
+                <div class="timeline-column">
+                    <article class="timeline-card">
+                        <div class="timeline-badge">01</div>
+                        <div class="timeline-meta">
+                            <span>August 5, 2021</span>
+                            <h3>First Meeting</h3>
+                        </div>
+                        <p>We met without expectations. What followed was a genuine friendship that grew into a partnership built on patience and care.</p>
+                    </article>
+                    <article class="timeline-card">
+                        <div class="timeline-badge">02</div>
+                        <div class="timeline-meta">
+                            <span>March 7, 2023</span>
+                            <h3>Choosing Each Other</h3>
+                        </div>
+                        <p>With time, feelings became clear. We moved forward with honesty, making sure every step reflected respect for our families.</p>
+                    </article>
+                    <article class="timeline-card">
+                        <div class="timeline-badge">03</div>
+                        <div class="timeline-meta">
+                            <span>Early 2024</span>
+                            <h3>Bringing Family In</h3>
+                        </div>
+                        <p>We shared our relationship with both families. It mattered to us that they didn’t just know—we wanted them to feel included.</p>
+                    </article>
+                    <article class="timeline-card pivotal">
+                        <div class="timeline-badge">04</div>
+                        <div class="timeline-meta">
+                            <span>October 25, 2024</span>
+                            <h3>A Moment That Broke Their Trust</h3>
+                        </div>
+                        <p>In a single evening, emotions overtook judgment. Voices were raised, messages were sent in frustration, and her parents saw a side of me that I regret deeply. I understand why it shook them.</p>
+                        <div class="timeline-reflection">
+                            <svg><use href="#icon-flame"></use></svg>
+                            <span>I replay this day often—not to dwell, but to remember why grace matters.</span>
+                        </div>
+                    </article>
+                </div>
+                <div class="timeline-column">
+                    <article class="timeline-card">
+                        <div class="timeline-badge">05</div>
+                        <div class="timeline-meta">
+                            <span>July 22, 2025</span>
+                            <h3>The Decision</h3>
+                        </div>
+                        <p>Your family asked us to part ways. It was painful, but I accept it. Their love for her was clear—they chose her peace over uncertainty.</p>
+                    </article>
+                    <article class="timeline-card">
+                        <div class="timeline-badge">06</div>
+                        <div class="timeline-meta">
+                            <span>Months After</span>
+                            <h3>Honest Reflection</h3>
+                        </div>
+                        <p>I spent months untangling that night. I sought therapy, kept mentors close, and practiced restraint. Growth isn’t abstract—it’s daily discipline.</p>
+                    </article>
+                    <article class="timeline-card">
+                        <div class="timeline-badge">07</div>
+                        <div class="timeline-meta">
+                            <span>Today</span>
+                            <h3>Persistent, Gentle</h3>
+                        </div>
+                        <p>Today, I stand steady. Not insisting I’m right, but showing I’m changing. My goal is to be the partner—and son-in-law—you can trust.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section journey-reflect">
+        <div class="container">
+            <div class="journey-reflect-card">
+                <div class="reflect-header">
+                    <span class="eyebrow">What I hold onto</span>
+                    <h2>Trust is rebuilt quietly, consistently.</h2>
+                </div>
+                <p>What you didn’t get to see was the remorse and the routines that followed. I know words don’t fix hurt. But they can let you know that my actions now are deliberate, measured, and designed to earn your faith back.</p>
+                <div class="reflect-footer">
+                    <div class="reflect-quote">“The incident didn’t define me—it revealed where I had to grow. Every day since has been about that growth.”</div>
+                    <a class="btn-secondary subtle" href="/what-ive-learned">See what I’ve learned »</a>
+                </div>
             </div>
         </div>
     </section>

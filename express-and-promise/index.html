@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,500&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -34,56 +35,193 @@
         </div>
     </nav>
 
+    <!-- Inline SVG symbols -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+        <symbol id="icon-olive-branch" viewBox="0 0 120 120">
+            <path d="M20 70 C35 55 55 45 80 40" stroke="currentColor" stroke-width="6" fill="none" stroke-linecap="round"/>
+            <path d="M40 75 C45 65 55 57 68 52" stroke="currentColor" stroke-width="6" fill="none" stroke-linecap="round"/>
+            <path d="M90 35 C92 45 90 55 82 64" stroke="currentColor" stroke-width="6" fill="none" stroke-linecap="round"/>
+            <circle cx="82" cy="64" r="12" fill="currentColor" opacity="0.25"/>
+            <circle cx="68" cy="52" r="10" fill="currentColor" opacity="0.2"/>
+            <circle cx="55" cy="57" r="8" fill="currentColor" opacity="0.18"/>
+        </symbol>
+        <symbol id="icon-compass" viewBox="0 0 120 120">
+            <circle cx="60" cy="60" r="45" stroke="currentColor" stroke-width="4" fill="none" opacity="0.5"/>
+            <polygon points="60,20 75,75 60,60 45,75" fill="currentColor" opacity="0.6"/>
+            <circle cx="60" cy="60" r="6" fill="currentColor"/>
+        </symbol>
+        <symbol id="icon-heart-shield" viewBox="0 0 120 120">
+            <path d="M60 20 L90 30 L90 65 C90 85 75 100 60 110 C45 100 30 85 30 65 L30 30 Z" fill="none" stroke="currentColor" stroke-width="5" opacity="0.5"/>
+            <path d="M60 40 C54 30 40 33 40 48 C40 63 60 78 60 78 C60 78 80 63 80 48 C80 33 66 30 60 40 Z" fill="currentColor" opacity="0.4"/>
+        </symbol>
+        <symbol id="icon-handshake" viewBox="0 0 100 100">
+            <path d="M30 60 L20 50 L25 40 L35 45 L40 35 L50 40 L45 50 L35 45 Z" fill="currentColor" opacity="0.8"/>
+            <path d="M70 60 L80 50 L75 40 L65 45 L60 35 L50 40 L55 50 L65 45 Z" fill="currentColor" opacity="0.8"/>
+            <path d="M45 50 L50 55 L55 50" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <circle cx="50" cy="55" r="15" stroke="currentColor" stroke-width="2" fill="none" opacity="0.3"/>
+        </symbol>
+    </svg>
+
     <!-- Page Header -->
-    <section class="page-hero">
+    <section class="page-hero express-hero">
+        <div class="express-hero-shape express-hero-shape-1"></div>
+        <div class="express-hero-shape express-hero-shape-2"></div>
+        <div class="express-hero-shape express-hero-shape-3"></div>
         <div class="container">
-            <h1 class="page-title">I'm Not Here to Justify</h1>
-            <p class="page-subtitle">Only to Express</p>
+            <div class="express-hero-content">
+                <div class="express-hero-text">
+                    <span class="hero-pill">A Quiet Promise</span>
+                    <h1 class="page-title">I'm Not Here to Justify</h1>
+                    <p class="page-subtitle">A letter of accountability, care, and a promise to honor what matters most.</p>
+                    <div class="hero-insight-cards">
+                        <div class="insight-card">
+                            <svg class="insight-icon"><use href="#icon-olive-branch"></use></svg>
+                            <span>Listening before speaking</span>
+                        </div>
+                        <div class="insight-card">
+                            <svg class="insight-icon"><use href="#icon-compass"></use></svg>
+                            <span>Choosing a steadier path</span>
+                        </div>
+                        <div class="insight-card">
+                            <svg class="insight-icon"><use href="#icon-heart-shield"></use></svg>
+                            <span>Protecting what we value</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="express-hero-illustration">
+                    <div class="illustration-orbit">
+                        <div class="orbit-circle orbit-circle-1"></div>
+                        <div class="orbit-circle orbit-circle-2"></div>
+                        <div class="orbit-circle orbit-circle-3"></div>
+                    </div>
+                    <div class="hero-quote-card">
+                        <svg class="quote-icon"><use href="#icon-heart-shield"></use></svg>
+                        <p>“Trust is built quietly—in the pauses, the patience, and the promises we keep.”</p>
+                        <span>For your family, with respect.</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Content -->
-    <section class="section">
+    <section class="section express-overview section-alt">
         <div class="container">
-            <div class="express-content">
-                <!-- Opening Apology -->
-                <div class="express-section">
-                    <div class="apology-box">
-                        <p class="apology-text">I am deeply sorry for what happened on October 25th, 2024. I am sorry for the words I spoke in frustration, for raising my voice in front of you, and for the messages that followed. Most of all, I am sorry for the pain and concern this caused you and for the disappointment you felt seeing your daughter upset.</p>
-                        <p class="apology-text">I take full responsibility for my actions. There is no excuse for how I behaved that day, and I understand why you made the decision you did on July 22nd, 2025. I am not here to make excuses or to justify what happened. I am here to express my genuine remorse and to show you who I am, and who I am committed to being.</p>
+            <div class="express-overview-grid">
+                <div class="story-card emphasis">
+                    <div class="story-card-header">
+                        <svg class="story-icon"><use href="#icon-heart-shield"></use></svg>
+                        <span>Opening Apology</span>
+                    </div>
+                    <div class="story-card-body">
+                        <p>I am deeply sorry for what happened on October 25th, 2024. I am sorry for the words I spoke in frustration, for raising my voice in front of you, and for the messages that followed. Most of all, I am sorry for the pain and concern this caused you and for the disappointment you felt seeing your daughter upset.</p>
+                        <p>I take full responsibility for my actions. There is no excuse for how I behaved that day, and I understand why you made the decision you did on July 22nd, 2025. I am not here to make excuses or to justify what happened. I am here to express my genuine remorse and to show you who I am, and who I am committed to being.</p>
+                    </div>
+                    <div class="story-card-footer">
+                        <div class="footer-pill">Owning my mistakes</div>
+                        <div class="footer-pill">Choosing patience over pride</div>
                     </div>
                 </div>
-
-                <!-- Section A: Acknowledgment -->
-                <div class="express-section">
-                    <h2 class="section-subtitle">Understanding Your Perspective</h2>
-                    <div class="acknowledgment-text">
+                <div class="story-card softly">
+                    <div class="story-card-header">
+                        <svg class="story-icon"><use href="#icon-compass"></use></svg>
+                        <span>Understanding Your Perspective</span>
+                    </div>
+                    <div class="story-card-body">
                         <p>I understand that from your perspective, what you witnessed that day—your daughter upset and words that seemed disrespectful—broke the image you had of a calm, stable relationship. You felt protective, disappointed, and even a little betrayed. To you, it didn't look like a momentary argument; it looked like a deeper problem.</p>
                         <p>Your feelings were completely understandable. You had only that day and those messages to judge from. What you couldn't see was the immediate remorse I felt, the conversations Preksha and I had afterward, or the months of reflection and growth that followed. But I don't expect you to believe that based on words alone. I know trust must be earned through actions, not words.</p>
                     </div>
+                    <div class="story-card-footer">
+                        <div class="footer-pill light">Seeing through your eyes</div>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Section B: Promises -->
-                <div class="express-section">
-                    <h2 class="section-subtitle">My Promises</h2>
-                    <ul class="promises-list">
-                        <li>To always treat Preksha with respect, especially during disagreements. I will never raise my voice in anger or speak words in frustration that I cannot take back.</li>
-                        <li>To communicate with calm and clarity, even when emotions run high. I will pause, breathe, and choose words that heal rather than hurt.</li>
-                        <li>To listen actively and with empathy. Her feelings matter more than being right, and I will always prioritize understanding over winning an argument.</li>
-                        <li>To respect your family values and traditions. Your daughter grew up in a home with values I admire, and I commit to honoring those in our life together.</li>
-                        <li>To show you the best version of myself, not just in good times but consistently. I understand that trust is built in moments, not just in grand gestures.</li>
-                        <li>To continue growing and learning. I am not perfect, but I am committed to becoming better each day—for Preksha, for myself, and for your family.</li>
-                    </ul>
+    <section class="section express-promises">
+        <div class="container">
+            <div class="promise-section-header">
+                <span class="eyebrow">Commitments I stand by</span>
+                <h2 class="section-title">My Promises</h2>
+                <p class="section-intro">Each promise is an action I practice daily. They are reminders of the partner and son-in-law I intend to be.</p>
+            </div>
+            <div class="promise-grid">
+                <article class="promise-card">
+                    <svg class="promise-icon"><use href="#icon-handshake"></use></svg>
+                    <h3>Respect under pressure</h3>
+                    <p>To always treat Preksha with respect, especially during disagreements. I will never raise my voice in anger or speak words in frustration that I cannot take back.</p>
+                    <span class="promise-tag">Measured words</span>
+                </article>
+                <article class="promise-card">
+                    <svg class="promise-icon"><use href="#icon-olive-branch"></use></svg>
+                    <h3>Calm communication</h3>
+                    <p>To communicate with calm and clarity, even when emotions run high. I will pause, breathe, and choose words that heal rather than hurt.</p>
+                    <span class="promise-tag">Steady voice</span>
+                </article>
+                <article class="promise-card">
+                    <svg class="promise-icon"><use href="#icon-heart-shield"></use></svg>
+                    <h3>Empathy first</h3>
+                    <p>To listen actively and with empathy. Her feelings matter more than being right, and I will always prioritize understanding over winning an argument.</p>
+                    <span class="promise-tag">Active listening</span>
+                </article>
+                <article class="promise-card">
+                    <svg class="promise-icon"><use href="#icon-compass"></use></svg>
+                    <h3>Honoring your values</h3>
+                    <p>To respect your family values and traditions. Your daughter grew up in a home with values I admire, and I commit to honoring those in our life together.</p>
+                    <span class="promise-tag">Shared tradition</span>
+                </article>
+                <article class="promise-card">
+                    <svg class="promise-icon"><use href="#icon-compass"></use></svg>
+                    <h3>Consistency in action</h3>
+                    <p>To show you the best version of myself, not just in good times but consistently. I understand that trust is built in moments, not just in grand gestures.</p>
+                    <span class="promise-tag">Daily proof</span>
+                </article>
+                <article class="promise-card">
+                    <svg class="promise-icon"><use href="#icon-olive-branch"></use></svg>
+                    <h3>Committed to growth</h3>
+                    <p>To continue growing and learning. I am not perfect, but I am committed to becoming better each day—for Preksha, for myself, and for your family.</p>
+                    <span class="promise-tag">Ever learning</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section express-family section-alt">
+        <div class="container">
+            <div class="family-wrapper">
+                <div class="family-illustration">
+                    <div class="family-circle family-circle-1"></div>
+                    <div class="family-circle family-circle-2"></div>
+                    <div class="family-circle family-circle-3"></div>
+                    <svg class="family-icon"><use href="#icon-heart-shield"></use></svg>
                 </div>
-
-                <!-- Section C: Why Your Family -->
-                <div class="express-section">
-                    <h2 class="section-subtitle">Why I Want to Be Part of Your Family</h2>
+                <div class="family-content">
+                    <h2 class="section-title">Why I Want to Be Part of Your Family</h2>
                     <div class="family-text">
                         <p>I want to be part of your family not because it's convenient or expected, but because I've seen the values you've instilled in Preksha. She's grounded, respectful, and genuinely good—qualities that reflect the home she came from. I want to learn from those values and contribute to them.</p>
                         <p>More than that, I want to earn your trust. Not through words written here, but through consistent actions over time. I want to show you that I'm someone who can be relied upon, who can be trusted with your daughter's happiness, and who can be welcomed into your family with confidence.</p>
                         <p>If someday you choose to see me again, I'll be grateful for the chance to earn your trust—not just for a day, but for a lifetime.</p>
                     </div>
+                    <div class="family-note">
+                        <div class="note-pill">Gratitude for your guidance</div>
+                        <div class="note-pill">A commitment to show up</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section express-closing">
+        <div class="container">
+            <div class="closing-card">
+                <div class="closing-header">
+                    <span class="eyebrow">One last promise</span>
+                    <h2>I'll keep proving this quietly.</h2>
+                </div>
+                <p class="closing-text">If someday you choose to see me again, I'll show you not just who I am, but who I’ve grown to be. Until then, my promise is to honor your daughter, respect your family, and live the values I admire in you.</p>
+                <div class="closing-footer">
+                    <div class="closing-badge">With respect, Jainam</div>
+                    <a class="btn-secondary subtle" href="/vision-forward">See how I plan to honor this »</a>
                 </div>
             </div>
         </div>

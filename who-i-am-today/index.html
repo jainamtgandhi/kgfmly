@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,500&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -34,42 +35,215 @@
         </div>
     </nav>
 
+    <!-- Inline SVG Symbols -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+        <symbol id="icon-family-circle" viewBox="0 0 120 120">
+            <circle cx="60" cy="60" r="52" stroke="currentColor" stroke-width="6" fill="none" opacity="0.4"/>
+            <circle cx="45" cy="55" r="12" fill="currentColor" opacity="0.7"/>
+            <circle cx="75" cy="55" r="12" fill="currentColor" opacity="0.5"/>
+            <path d="M28 88 C38 70 55 62 60 62 C65 62 82 70 92 88" stroke="currentColor" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.7"/>
+        </symbol>
+        <symbol id="icon-diamond-values" viewBox="0 0 120 120">
+            <polygon points="60,20 95,45 60,100 25,45" fill="none" stroke="currentColor" stroke-width="5" opacity="0.5"/>
+            <polygon points="60,32 83,48 60,90 37,48" fill="currentColor" opacity="0.45"/>
+            <line x1="60" y1="20" x2="60" y2="100" stroke="currentColor" stroke-width="4" opacity="0.4"/>
+        </symbol>
+        <symbol id="icon-portfolio" viewBox="0 0 120 120">
+            <rect x="25" y="40" width="70" height="50" rx="8" fill="none" stroke="currentColor" stroke-width="5" opacity="0.5"/>
+            <path d="M40 40 L40 30 C40 26 43 23 47 23 L73 23 C77 23 80 26 80 30 L80 40" stroke="currentColor" stroke-width="5" fill="none" opacity="0.5"/>
+            <rect x="48" y="57" width="24" height="10" rx="4" fill="currentColor" opacity="0.6"/>
+        </symbol>
+        <symbol id="icon-heartbeat" viewBox="0 0 120 120">
+            <path d="M20 55 C20 35 40 25 50 40 L60 55 L70 40 C80 25 100 35 100 55 C100 80 60 100 60 100 C60 100 20 80 20 55 Z" fill="none" stroke="currentColor" stroke-width="5" opacity="0.45"/>
+            <path d="M30 60 L45 60 L53 45 L63 75 L72 55 L90 55" stroke="currentColor" stroke-width="6" fill="none" stroke-linecap="round"/>
+        </symbol>
+        <symbol id="icon-lighthouse" viewBox="0 0 120 120">
+            <rect x="50" y="30" width="20" height="60" rx="4" fill="currentColor" opacity="0.2"/>
+            <polygon points="60,15 75,30 45,30" fill="currentColor" opacity="0.6"/>
+            <rect x="54" y="45" width="12" height="20" rx="3" fill="currentColor" opacity="0.6"/>
+            <path d="M30 45 L15 35" stroke="currentColor" stroke-width="5" opacity="0.4"/>
+            <path d="M90 45 L105 35" stroke="currentColor" stroke-width="5" opacity="0.4"/>
+        </symbol>
+        <symbol id="icon-growth-ring" viewBox="0 0 120 120">
+            <circle cx="60" cy="60" r="40" stroke="currentColor" stroke-width="4" fill="none" opacity="0.4"/>
+            <path d="M60 20 A40 40 0 0 1 97 45" stroke="currentColor" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.6"/>
+            <path d="M55 55 L65 65" stroke="currentColor" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+            <circle cx="60" cy="60" r="8" fill="currentColor" opacity="0.6"/>
+        </symbol>
+    </svg>
+
     <!-- Page Header -->
-    <section class="page-hero">
+    <section class="page-hero identity-hero">
+        <div class="identity-hero-shape identity-hero-shape-1"></div>
+        <div class="identity-hero-shape identity-hero-shape-2"></div>
+        <div class="identity-hero-shape identity-hero-shape-3"></div>
         <div class="container">
-            <h1 class="page-title">Who I Am Today</h1>
-            <p class="page-subtitle">My Values & Purpose</p>
+            <div class="identity-hero-content">
+                <div class="identity-hero-text">
+                    <span class="hero-pill">Today, with intention</span>
+                    <h1 class="page-title">Who I Am Today</h1>
+                    <p class="page-subtitle">This is the person I’ve grown into: grounded, steady, and building a life that reflects the values your daughter deserves.</p>
+                    <div class="identity-metrics">
+                        <div class="metric-card">
+                            <span class="metric-label">Years Together</span>
+                            <strong>7</strong>
+                            <small>Built on patience and learning.</small>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-label">Core Values</span>
+                            <strong>3</strong>
+                            <small>Respect, responsibility, resilience.</small>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-label">Daily Practice</span>
+                            <strong>Gratitude</strong>
+                            <small>A reminder of what we’re building.</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="identity-hero-illustration">
+                    <div class="identity-orbit identity-orbit-1"></div>
+                    <div class="identity-orbit identity-orbit-2"></div>
+                    <div class="identity-orbit identity-orbit-3"></div>
+                    <div class="identity-core-card">
+                        <svg class="identity-core-icon"><use href="#icon-lighthouse"></use></svg>
+                        <p>“A steady light is built by showing up every day.”</p>
+                        <span>Guided by purpose, defined by action.</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Content -->
-    <section class="section">
+    <section class="section identity-overview section-alt">
         <div class="container">
-            <div class="who-i-am-content">
-                <div class="profile-cards">
-                    <div class="profile-card">
-                        <div class="profile-icon">👨‍👩‍👧‍👦</div>
-                        <h3>Family</h3>
-                        <p>Family is at the core of who I am. I believe in the strength of relationships built on respect, understanding, and mutual support. I've learned that family isn't just about blood—it's about the people you choose to build your life with and the values you share. I want to be someone who honors family traditions, respects elders, and creates a home where everyone feels valued and heard.</p>
+            <div class="identity-intro">
+                <span class="eyebrow">Pillars I live by</span>
+                <h2 class="section-title">Anchored in what matters</h2>
+                <p class="section-intro">Each pillar is more than a word—it’s how I show up. These are the traits you’ll see in your daughter’s partner every day.</p>
+            </div>
+            <div class="identity-pillars">
+                <div class="profile-card identity-card">
+                    <div class="profile-icon">
+                        <svg><use href="#icon-family-circle"></use></svg>
                     </div>
-
-                    <div class="profile-card">
-                        <div class="profile-icon">💎</div>
-                        <h3>Values</h3>
-                        <p>My values are grounded in integrity, respect, and growth. I believe in doing the right thing even when it's difficult, in treating others with dignity regardless of circumstances, and in continuously learning and improving. I've learned that your character is defined not by your best moments, but by how you handle your worst. I'm committed to being someone who can be trusted, who can be relied upon, and who can be counted on to do the right thing.</p>
+                    <div class="identity-card-header">
+                        <h3>Family First</h3>
+                        <span>Respect • Presence • Gratitude</span>
                     </div>
-
-                    <div class="profile-card">
-                        <div class="profile-icon">💼</div>
-                        <h3>Career</h3>
-                        <p>I approach my career with the same commitment I bring to relationships: steady, thoughtful, and focused on long-term growth. I believe in building something meaningful, not just successful. Financial stability is important to me, but so is doing work that aligns with my values. I'm committed to providing for a family, not just in material terms, but in creating security, stability, and opportunities for growth.</p>
+                    <p>Family is my compass. I honor traditions, respect elders, and protect emotional safety. Home is the space where everyone feels heard, valued, and cared for.</p>
+                    <div class="identity-tags">
+                        <span>Active listener</span>
+                        <span>Hands-on support</span>
                     </div>
                 </div>
-
-                <div class="profile-image-placeholder">
-                    <div class="image-placeholder">
-                        <span>Profile Image Placeholder</span>
+                <div class="profile-card identity-card">
+                    <div class="profile-icon">
+                        <svg><use href="#icon-diamond-values"></use></svg>
                     </div>
+                    <div class="identity-card-header">
+                        <h3>Character Led</h3>
+                        <span>Integrity • Empathy • Accountability</span>
+                    </div>
+                    <p>Doing the right thing isn’t situational—it’s my default. I’ve learned that trust is earned most in the hard moments, and I’m committed to standing steady in them.</p>
+                    <div class="identity-tags">
+                        <span>Shows up calmly</span>
+                        <span>Owns mistakes</span>
+                    </div>
+                </div>
+                <div class="profile-card identity-card">
+                    <div class="profile-icon">
+                        <svg><use href="#icon-portfolio"></use></svg>
+                    </div>
+                    <div class="identity-card-header">
+                        <h3>Purposeful Work</h3>
+                        <span>Stability • Vision • Discipline</span>
+                    </div>
+                    <p>I build careers the way I build relationships—patiently, intentionally, and for the long run. Providing isn’t just financial; it’s about creating confidence in the future.</p>
+                    <div class="identity-tags">
+                        <span>Long-term planner</span>
+                        <span>Values alignment</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section identity-values">
+        <div class="container">
+            <div class="values-wrapper">
+                <div class="values-content">
+                    <span class="eyebrow">How I lead myself</span>
+                    <h2 class="section-title">What grounds my decisions</h2>
+                    <p class="section-intro">These aren’t abstract ideals—they’re daily practices that shape how I care for Preksha and how I respect your family.</p>
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <svg class="value-icon"><use href="#icon-heartbeat"></use></svg>
+                            <h3>Emotional steadiness</h3>
+                            <p>I choose patience over reaction. Conversations stay respectful, even when emotions are high.</p>
+                        </div>
+                        <div class="value-card">
+                            <svg class="value-icon"><use href="#icon-lighthouse"></use></svg>
+                            <h3>Reliability</h3>
+                            <p>Promises turn into routines. Your daughter can count on me to handle the mundane and the meaningful.</p>
+                        </div>
+                        <div class="value-card">
+                            <svg class="value-icon"><use href="#icon-growth-ring"></use></svg>
+                            <h3>Continuous growth</h3>
+                            <p>I invest in learning, mentors, and honest feedback. Growth is part of how I love.</p>
+                        </div>
+                        <div class="value-card">
+                            <svg class="value-icon"><use href="#icon-family-circle"></use></svg>
+                            <h3>Community-minded</h3>
+                            <p>Family decisions are shared decisions. I’m here to support, consult, and include.</p>
+                        </div>
+                    </div>
+                </div>
+                <aside class="values-aside">
+                    <div class="values-quote-card">
+                        <span class="eyebrow">From Preksha</span>
+                        <p>“He doesn’t just apologize—he changes. He listens, he adjusts, and he keeps showing up softer.”</p>
+                    </div>
+                    <div class="values-list">
+                        <h3>What this means day-to-day</h3>
+                        <ul>
+                            <li>Checking in with her parents regularly, not just on occasions.</li>
+                            <li>Making sure home is calm before it is convenient.</li>
+                            <li>Honoring commitments even when schedules get heavy.</li>
+                            <li>Keeping finances transparent and planned.</li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <section class="section identity-purpose section-alt">
+        <div class="container">
+            <div class="purpose-wrapper">
+                <div class="purpose-content">
+                    <span class="eyebrow">Looking forward</span>
+                    <h2 class="section-title">The life I’m building with her</h2>
+                    <p class="section-intro">My purpose is simple: to create a home where your daughter feels deeply loved, secure, and seen. Everything I do—professionally and personally—is in service of that promise.</p>
+                    <div class="purpose-pillars">
+                        <div class="purpose-pillar">
+                            <h3>Emotional Safety</h3>
+                            <p>Arguments don’t get loud. They get paused, revisited, and resolved with care.</p>
+                        </div>
+                        <div class="purpose-pillar">
+                            <h3>Shared Decisions</h3>
+                            <p>From finances to family plans—we decide together, with respect for where she comes from.</p>
+                        </div>
+                        <div class="purpose-pillar">
+                            <h3>Legacy of Respect</h3>
+                            <p>Your family’s values don’t just remain—they grow with us, guiding how we raise our own someday.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="purpose-card">
+                    <svg class="purpose-icon"><use href="#icon-diamond-values"></use></svg>
+                    <p>“The goal isn’t perfection—it’s progress we can feel every day.”</p>
+                    <div class="purpose-tag">Steady & sincere</div>
                 </div>
             </div>
         </div>

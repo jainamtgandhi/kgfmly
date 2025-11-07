@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,500&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -34,201 +35,282 @@
         </div>
     </nav>
 
+    <!-- Inline SVG Icons -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+        <symbol id="icon-camera-heart" viewBox="0 0 120 120">
+            <rect x="25" y="35" width="70" height="50" rx="8" fill="none" stroke="currentColor" stroke-width="5" opacity="0.5"/>
+            <circle cx="60" cy="60" r="16" fill="none" stroke="currentColor" stroke-width="4" opacity="0.5"/>
+            <path d="M52 58 C52 54 55 52 58 54 C60 55 60 56 60 56 C60 56 60 55 62 54 C65 52 68 54 68 58 C68 63 60 68 60 68 C60 68 52 63 52 58 Z" fill="currentColor" opacity="0.5"/>
+        </symbol>
+        <symbol id="icon-polaroid" viewBox="0 0 120 120">
+            <rect x="25" y="25" width="70" height="70" rx="8" fill="none" stroke="currentColor" stroke-width="5" opacity="0.45"/>
+            <rect x="30" y="70" width="60" height="15" rx="4" fill="currentColor" opacity="0.35"/>
+            <circle cx="60" cy="55" r="18" fill="currentColor" opacity="0.28"/>
+        </symbol>
+        <symbol id="icon-flower" viewBox="0 0 120 120">
+            <path d="M60 30 C50 20 40 30 42 40 C45 50 60 53 60 53 C60 53 75 50 78 40 C80 30 70 20 60 30 Z" fill="currentColor" opacity="0.35"/>
+            <path d="M60 53 C40 54 35 70 50 75 C60 78 60 90 60 90 C60 90 60 78 70 75 C85 70 80 54 60 53 Z" fill="none" stroke="currentColor" stroke-width="5" opacity="0.45"/>
+        </symbol>
+        <symbol id="icon-frames" viewBox="0 0 120 120">
+            <rect x="30" y="30" width="50" height="50" rx="6" fill="none" stroke="currentColor" stroke-width="5" opacity="0.4"/>
+            <rect x="50" y="50" width="50" height="50" rx="6" fill="none" stroke="currentColor" stroke-width="5" opacity="0.4"/>
+        </symbol>
+        <symbol id="icon-quote" viewBox="0 0 120 120">
+            <path d="M35 45 C35 35 43 28 53 30 L55 40 C50 40 45 45 45 52 C45 60 51 65 58 65 C58 80 45 88 35 80 Z" fill="currentColor" opacity="0.35"/>
+            <path d="M75 45 C75 35 83 28 93 30 L95 40 C90 40 85 45 85 52 C85 60 91 65 98 65 C98 80 85 88 75 80 Z" fill="currentColor" opacity="0.35"/>
+        </symbol>
+    </svg>
+
     <!-- Page Header -->
-    <section class="page-hero">
+    <section class="page-hero memories-hero">
+        <div class="memories-hero-shape memories-hero-shape-1"></div>
+        <div class="memories-hero-shape memories-hero-shape-2"></div>
+        <div class="memories-hero-shape memories-hero-shape-3"></div>
         <div class="container">
-            <h1 class="page-title">Memories</h1>
-            <p class="page-subtitle">Together</p>
+            <div class="memories-hero-content">
+                <div class="memories-hero-text">
+                    <span class="hero-pill">Moments we hold</span>
+                    <h1 class="page-title">Memories</h1>
+                    <p class="page-subtitle">Snapshots of the love, laughter, and quiet promises we’ve shared—each one a reminder of why this story is worth saving.</p>
+                    <div class="memories-highlights">
+                        <div class="memories-highlight">
+                            <span class="highlight-label">Years together</span>
+                            <strong>7</strong>
+                        </div>
+                        <div class="memories-highlight">
+                            <span class="highlight-label">Captured chapters</span>
+                            <strong>15</strong>
+                        </div>
+                        <div class="memories-highlight">
+                            <span class="highlight-label">Shared traditions</span>
+                            <strong>Ours & yours</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="memories-hero-illustration">
+                    <div class="memories-orbit memories-orbit-1"></div>
+                    <div class="memories-orbit memories-orbit-2"></div>
+                    <div class="memories-orbit memories-orbit-3"></div>
+                    <div class="memories-core-card">
+                        <svg class="memories-core-icon"><use href="#icon-camera-heart"></use></svg>
+                        <p>“We fell in love in these little frames. I’m ready to keep filling them with intention.”</p>
+                        <span>Held with gratitude for your family.</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Content -->
-    <section class="section">
+    <section class="section memories-story section-alt">
         <div class="container">
-            <div class="memories-intro">
-                <p>These moments capture the journey we've shared—from our first meeting to the memories we've built together.</p>
+            <div class="memories-story-grid">
+                <div class="memories-story-card">
+                    <span class="eyebrow">How we remember</span>
+                    <h2 class="section-title">Our story lives in the small, steady moments</h2>
+                    <p class="section-intro">These frames aren’t staged—they’re the quiet check-ins after long days, the laughter in traffic jams, the afternoons spent with family. They remind me what your daughter means to me, and why I’m committed to honoring her every day.</p>
+                </div>
+                <div class="memories-quote-card">
+                    <svg class="memories-quote-icon"><use href="#icon-quote"></use></svg>
+                    <p>"We grew with intention, not accident. These memories are proof that we know how to choose each other."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section memories-gallery">
+        <div class="container">
+            <div class="gallery-section">
+                <div class="gallery-header">
+                    <svg><use href="#icon-polaroid"></use></svg>
+                    <div>
+                        <h3>Our beginnings</h3>
+                        <p>Moments that marked the start—first conversations, first blessings from family, first time we knew this was more than a fleeting spark.</p>
+                    </div>
+                </div>
+                <div class="gallery-grid">
+                    <figure class="memory-item">
+                        <div class="memory-image">
+                            <img src="../images/placeholder-1.svg" alt="First meeting" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="memory-placeholder" style="display: none;">
+                                <span>Frame 1</span>
+                                <small>Drop image here</small>
+                            </div>
+                        </div>
+                        <figcaption>August 5, 2021 &mdash; the day it quietly began.</figcaption>
+                    </figure>
+                    <figure class="memory-item">
+                        <div class="memory-image">
+                            <img src="../images/placeholder-2.svg" alt="First celebration" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="memory-placeholder" style="display: none;">
+                                <span>Frame 2</span>
+                                <small>Drop image here</small>
+                            </div>
+                        </div>
+                        <figcaption>First festival shared with both families.</figcaption>
+                    </figure>
+                    <figure class="memory-item">
+                        <div class="memory-image">
+                            <img src="../images/placeholder-3.svg" alt="Family blessings" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="memory-placeholder" style="display: none;">
+                                <span>Frame 3</span>
+                                <small>Drop image here</small>
+                            </div>
+                        </div>
+                        <figcaption>When our parents first saw us together.</figcaption>
+                    </figure>
+                    <figure class="memory-item">
+                        <div class="memory-image">
+                            <img src="../images/placeholder-4.svg" alt="First trip" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="memory-placeholder" style="display: none;">
+                                <span>Frame 4</span>
+                                <small>Drop image here</small>
+                            </div>
+                        </div>
+                        <figcaption>Our first weekend away &mdash; we planned our future on a napkin.</figcaption>
+                    </figure>
+                </div>
             </div>
 
-            <div class="images-grid">
-                <!-- Image Placeholder 1 -->
-                <div class="image-item">
-                    <div class="image-wrapper">
-                        <img src="../images/placeholder-1.svg" alt="Memory 1" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="image-placeholder" style="display: none;">
-                            <span>Image 1</span>
-                            <small>Add your image here</small>
-                        </div>
+            <div class="gallery-section">
+                <div class="gallery-header">
+                    <svg><use href="#icon-flower"></use></svg>
+                    <div>
+                        <h3>Everyday warmth</h3>
+                        <p>The routines and rituals that made us certain&mdash;shared kitchens, long drives, family dinners, and quiet everyday joy.</p>
                     </div>
-                    <p class="image-caption">Add your caption here</p>
                 </div>
+                <div class="gallery-grid">
+                    <figure class="memory-item">
+                        <div class="memory-image">
+                            <img src="../images/placeholder-5.svg" alt="Cooking together" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="memory-placeholder" style="display: none;">
+                                <span>Frame 5</span>
+                                <small>Drop image here</small>
+                            </div>
+                        </div>
+                        <figcaption>Sunday meals we cooked for both homes.</figcaption>
+                    </figure>
+                    <figure class="memory-item">
+                        <div class="memory-image">
+                            <img src="../images/placeholder-6.svg" alt="Long drives" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="memory-placeholder" style="display: none;">
+                                <span>Frame 6</span>
+                                <small>Drop image here</small>
+                            </div>
+                        </div>
+                        <figcaption>Late-night drives just to talk and reset.</figcaption>
+                    </figure>
+                    <figure class="memory-item">
+                        <div class="memory-image">
+                            <img src="../images/placeholder-7.svg" alt="Festival prep" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="memory-placeholder" style="display: none;">
+                                <span>Frame 7</span>
+                                <small>Drop image here</small>
+                            </div>
+                        </div>
+                        <figcaption>Helping with festival prep at your home.</figcaption>
+                    </figure>
+                    <figure class="memory-item">
+                        <div class="memory-image">
+                            <img src="../images/placeholder-8.svg" alt="Parents visit" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="memory-placeholder" style="display: none;">
+                                <span>Frame 8</span>
+                                <small>Drop image here</small>
+                            </div>
+                        </div>
+                        <figcaption>Your visit to my home that made my parents proud.</figcaption>
+                    </figure>
+                </div>
+            </div>
 
-                <!-- Image Placeholder 2 -->
-                <div class="image-item">
-                    <div class="image-wrapper">
-                        <img src="../images/placeholder-2.svg" alt="Memory 2" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="image-placeholder" style="display: none;">
-                            <span>Image 2</span>
-                            <small>Add your image here</small>
-                        </div>
+            <div class="gallery-section">
+                <div class="gallery-header">
+                    <svg><use href="#icon-frames"></use></svg>
+                    <div>
+                        <h3>Milestones ahead</h3>
+                        <p>Frames reserved for what’s next&mdash;moments we’re working toward with patience and respect.</p>
                     </div>
-                    <p class="image-caption">Add your caption here</p>
                 </div>
+                <div class="gallery-grid gallery-grid-future">
+                    <figure class="memory-item future">
+                        <div class="memory-image">
+                            <img src="../images/placeholder-9.svg" alt="Future celebration" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="memory-placeholder" style="display: none;">
+                                <span>Frame 9</span>
+                                <small>Drop image here</small>
+                            </div>
+                        </div>
+                        <figcaption>First family dinner after reconnecting.</figcaption>
+                    </figure>
+                    <figure class="memory-item future">
+                        <div class="memory-image">
+                            <img src="../images/placeholder-10.svg" alt="Future festival" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="memory-placeholder" style="display: none;">
+                                <span>Frame 10</span>
+                                <small>Drop image here</small>
+                            </div>
+                        </div>
+                        <figcaption>Celebrating Diwali together with both families.</figcaption>
+                    </figure>
+                    <figure class="memory-item future">
+                        <div class="memory-image">
+                            <img src="../images/placeholder-11.svg" alt="Future milestones" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="memory-placeholder" style="display: none;">
+                                <span>Frame 11</span>
+                                <small>Drop image here</small>
+                            </div>
+                        </div>
+                        <figcaption>A small ceremony to reaffirm our commitments.</figcaption>
+                    </figure>
+                    <figure class="memory-item future">
+                        <div class="memory-image">
+                            <img src="../images/placeholder-12.svg" alt="Future getaway" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="memory-placeholder" style="display: none;">
+                                <span>Frame 12</span>
+                                <small>Drop image here</small>
+                            </div>
+                        </div>
+                        <figcaption>First trip after rebuilding trust&mdash;slow, intentional, grateful.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Image Placeholder 3 -->
-                <div class="image-item">
-                    <div class="image-wrapper">
-                        <img src="../images/placeholder-3.svg" alt="Memory 3" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="image-placeholder" style="display: none;">
-                            <span>Image 3</span>
-                            <small>Add your image here</small>
-                        </div>
+    <section class="section memories-instructions section-alt">
+        <div class="container">
+            <div class="instructions-card">
+                <div class="instructions-header">
+                    <svg><use href="#icon-camera-heart"></use></svg>
+                    <div>
+                        <h3>Swap in your real photos easily</h3>
+                        <p>Replace the placeholder images with your own. Each slot is already sized and optimized for quick updates.</p>
                     </div>
-                    <p class="image-caption">Add your caption here</p>
                 </div>
+                <div class="instructions-grid">
+                    <div class="instruction-step">
+                        <strong>1. Upload images</strong>
+                        <p>Place your photos in the <code>images/</code> folder using descriptive filenames.</p>
+                    </div>
+                    <div class="instruction-step">
+                        <strong>2. Update sources</strong>
+                        <p>Swap the <code>src</code> attribute in each <code>&lt;img&gt;</code> tag with the new file path.</p>
+                    </div>
+                    <div class="instruction-step">
+                        <strong>3. Personalize captions</strong>
+                        <p>Rewrite each <code>&lt;figcaption&gt;</code> to share the story behind the moment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Image Placeholder 4 -->
-                <div class="image-item">
-                    <div class="image-wrapper">
-                        <img src="../images/placeholder-4.svg" alt="Memory 4" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="image-placeholder" style="display: none;">
-                            <span>Image 4</span>
-                            <small>Add your image here</small>
-                        </div>
-                    </div>
-                    <p class="image-caption">Add your caption here</p>
-                </div>
-
-                <!-- Image Placeholder 5 -->
-                <div class="image-item">
-                    <div class="image-wrapper">
-                        <img src="../images/placeholder-5.svg" alt="Memory 5" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="image-placeholder" style="display: none;">
-                            <span>Image 5</span>
-                            <small>Add your image here</small>
-                        </div>
-                    </div>
-                    <p class="image-caption">Add your caption here</p>
-                </div>
-
-                <!-- Image Placeholder 6 -->
-                <div class="image-item">
-                    <div class="image-wrapper">
-                        <img src="../images/placeholder-6.svg" alt="Memory 6" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="image-placeholder" style="display: none;">
-                            <span>Image 6</span>
-                            <small>Add your image here</small>
-                        </div>
-                    </div>
-                    <p class="image-caption">Add your caption here</p>
-                </div>
-
-                <!-- Image Placeholder 7 -->
-                <div class="image-item">
-                    <div class="image-wrapper">
-                        <img src="../images/placeholder-7.svg" alt="Memory 7" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="image-placeholder" style="display: none;">
-                            <span>Image 7</span>
-                            <small>Add your image here</small>
-                        </div>
-                    </div>
-                    <p class="image-caption">Add your caption here</p>
-                </div>
-
-                <!-- Image Placeholder 8 -->
-                <div class="image-item">
-                    <div class="image-wrapper">
-                        <img src="../images/placeholder-8.svg" alt="Memory 8" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="image-placeholder" style="display: none;">
-                            <span>Image 8</span>
-                            <small>Add your image here</small>
-                        </div>
-                    </div>
-                    <p class="image-caption">Add your caption here</p>
-                </div>
-
-                <!-- Image Placeholder 9 -->
-                <div class="image-item">
-                    <div class="image-wrapper">
-                        <img src="../images/placeholder-9.svg" alt="Memory 9" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="image-placeholder" style="display: none;">
-                            <span>Image 9</span>
-                            <small>Add your image here</small>
-                        </div>
-                    </div>
-                    <p class="image-caption">Add your caption here</p>
-                </div>
-
-                <!-- Image Placeholder 10 -->
-                <div class="image-item">
-                    <div class="image-wrapper">
-                        <img src="../images/placeholder-10.svg" alt="Memory 10" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="image-placeholder" style="display: none;">
-                            <span>Image 10</span>
-                            <small>Add your image here</small>
-                        </div>
-                    </div>
-                    <p class="image-caption">Add your caption here</p>
-                </div>
-
-                <!-- Image Placeholder 11 -->
-                <div class="image-item">
-                    <div class="image-wrapper">
-                        <img src="../images/placeholder-11.svg" alt="Memory 11" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="image-placeholder" style="display: none;">
-                            <span>Image 11</span>
-                            <small>Add your image here</small>
-                        </div>
-                    </div>
-                    <p class="image-caption">Add your caption here</p>
-                </div>
-
-                <!-- Image Placeholder 12 -->
-                <div class="image-item">
-                    <div class="image-wrapper">
-                        <img src="../images/placeholder-12.svg" alt="Memory 12" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="image-placeholder" style="display: none;">
-                            <span>Image 12</span>
-                            <small>Add your image here</small>
-                        </div>
-                    </div>
-                    <p class="image-caption">Add your caption here</p>
-                </div>
-
-                <!-- Image Placeholder 13 -->
-                <div class="image-item">
-                    <div class="image-wrapper">
-                        <img src="../images/placeholder-13.svg" alt="Memory 13" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="image-placeholder" style="display: none;">
-                            <span>Image 13</span>
-                            <small>Add your image here</small>
-                        </div>
-                    </div>
-                    <p class="image-caption">Add your caption here</p>
-                </div>
-
-                <!-- Image Placeholder 14 -->
-                <div class="image-item">
-                    <div class="image-wrapper">
-                        <img src="../images/placeholder-14.svg" alt="Memory 14" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="image-placeholder" style="display: none;">
-                            <span>Image 14</span>
-                            <small>Add your image here</small>
-                        </div>
-                    </div>
-                    <p class="image-caption">Add your caption here</p>
-                </div>
-
-                <!-- Image Placeholder 15 -->
-                <div class="image-item">
-                    <div class="image-wrapper">
-                        <img src="../images/placeholder-15.svg" alt="Memory 15" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="image-placeholder" style="display: none;">
-                            <span>Image 15</span>
-                            <small>Add your image here</small>
-                        </div>
-                    </div>
-                    <p class="image-caption">Add your caption here</p>
-                </div>
+    <section class="section memories-closing">
+        <div class="container">
+            <div class="memories-closing-card">
+                <span class="eyebrow">Looking back with gratitude</span>
+                <h2>These memories keep me patient. They remind me what we’re protecting.</h2>
+                <p>Thank you for every moment you allowed me to share with her. I hope this gallery shows you what I already know—that our story is worth the time it takes to restore.</p>
             </div>
         </div>
     </section>
